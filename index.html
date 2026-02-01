@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyatt Audio UK</title>
+    <meta name="description" content="Guitar Technician based in Brighton, UK">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="wyattaudiouk-favicon.webp">
+    <script src="script.js" defer></script>
+    <script src="input-knobs.js" defer></script>
+</head>
+<body>
+      
+<div id="home">
+
+    
+
+    <div id="burger-div" onclick="showMenu()">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+    </div>
+
+    <div id="menu">
+
+        <nav id="nav-panel">
+            <a class="nav-item" href="#home" onclick="showMenu()"><h1>H O M E</h1></a>
+            <a class="nav-item" href="#kozel" onclick="showMenu()"><h1>K O Z E L</h1></a>
+            <a class="nav-item" href="#services" onclick="showMenu()"><h1>S E R V I C E S</h1></a>
+            <a class="nav-item" href="#reviews" onclick="showMenu()"><h1>R E V I E W S</h1></a>
+            <a class="nav-item" href="#contact" onclick="showMenu()"><h1>C O N T A C T</h1></a>
+        </nav>
+
+    </div>
+
+
+    <div id="social-bar">
+        <div>
+            <a href="https://www.instagram.com/wyattaudiouk/" aria-label="Visit Wyatt Audio UK on Instagram" target="_blank"><img class="social-icon" src="instagram.webp" alt="instagram handle"></a> 
+        </div>
+        <div>
+            <a href="mailto:connorwyatt98@gmail.com" aria-label="Send an email to Wyatt Audio UK"><img class="social-icon" src="mail.webp" alt="email address"></a> 
+        </div>
+        <div>
+            <a href="tel: +44 (0) 7379 357 645" aria-label="Phonecall Wyatt Audio UK"><img class="social-icon" src="phone.webp" alt="phone number"></a>
+        </div>
+        
+    </div>
+    
+    <video autoplay muted loop id="showreel">
+        <source src="Wyatt Audio Showreel_nologo.mp4" type="video/mp4">
+    </video>    
+
+    <img id="mobile-background" alt="background" src="circuit_board-fade54logo.webp">
+    
+    <img id="logo" alt="logo" src="Wyatt Audio UK.webp">
+
+</div>
+
+<div id="kozel">
+
+    <div id="kozel-hero-section">
+
+        <div id="kozel-main-img-container">
+            <svg class="chevron" id="chevron-left" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-chevron-left" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+            </svg>
+
+            <img id="kozel1" src="kozel1.jpg">
+
+            <svg class="chevron" id="chevron-right" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+
+            <div id="available-now">
+                <p1>AVAILABLE NOW</p1>
+            </div>
+        </div>
+        
+
+        <div id="kozel-main-text">
+
+            <h3 id="kozel-logo">KOZEL</h3><br>
+            <h2>£219</h2><br>
+            <div class="buy-buttons">
+                <div class="buy-button">
+                    <a href="https://reverb.com/item/94315414-wyatt-audio-kozel-fuzz-2026-powder-coat-black-standard-decal-laser-engraved?publish_confirmation=true" target="_blank"><p1>BUY ON REVERB</p1></a> 
+                </div>  
+                <div class="buy-button">
+                    <a href="https://ebay.us/m/bEVlFT" target="_blank"><p1>BUY ON EBAY</p1></a>
+                </div>     
+            </div><br>
+            
+            <p1 class="kozel-main-description">Built out of obsession with the thickness and chaos brought on by the legendary Big Muff,
+            KOZEL is a combination of components carefully selected from schematics of the Triangle,
+            Rams Head and Sovtek. The result? A wall of FUZZ that can be used to intentionally break your
+            signal or your ears, however you see fit!</p1> <br><br><br>
+            
+                <p1 class="kozel-main-description">Handmade in Brighton, England; With a fully analog signal path engaged through a
+
+            true-bypass circuit</p1>
+           
+            
+
+        </div>
+
+    </div>
+
+    <div id="kozel-info">
+
+        <div class="kozel-info-section">
+            
+            <div class="kozel-info-header" onclick="showInfoSection('details-dropdown', 'details-plus', 'details-minus')">
+
+                <div class="kozel-info-title">
+
+                    <svg class="info-svg" xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
+                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z"/>
+                    </svg>
+
+                    <h2 class="kozel-info-h2">DETAILS</h2>
+
+                </div>
+
+                <svg class="info-svg" id="details-plus" xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                </svg>
+
+                <svg class="info-svg" id="details-minus" xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
+                </svg>
+            </div>
+
+            <div class="kozel-info-dropdown" id="details-dropdown">
+
+                <p1 class="kozel-info-dropdown-text">Powered by 4x NOS silicon transistors and paired with carefully selected diodes and coupling
+caps, KOZEL is a versatile device able to go from a dynamic soft layer, to tearing your signal
+apart whilst keeping the low end tight and retaining your note definition at every stage. <br><br>
+With a variety of tone shaping controls, KOZEL will bend to your will while destroying everything
+it touches.</p1>
+
+            </div>
+            
+        </div>
+
+        <div class="kozel-info-section">
+            
+            <div class="kozel-info-header" onclick="showInfoSection('controls-dropdown', 'controls-plus', 'controls-minus')">
+
+                <div class="kozel-info-title">
+
+                    <svg class="info-svg" xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-sliders" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z"/>
+                    </svg>
+
+                    <h2 class="kozel-info-h2">CONTROLS</h2>
+
+                </div>
+
+                <svg class="info-svg" id="controls-plus" xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                </svg>
+
+                <svg class="info-svg" id="controls-minus" xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
+                </svg>
+            </div>
+
+            <div class="kozel-info-dropdown" id="controls-dropdown">
+
+                <p1 class="kozel-info-dropdown-text">KOZEL Features 10 Controls to help you dial in your destruction to the closest
+                frequency:<br><br>
+                VOLTS: Sets the amount of current that gets fed into the circuit; ranging from full power to
+                gradually draining to simulate a dying battery, giving spitty and broken tones.<br><br>
+                *This control can react differently depending on the input signal, and will shut off if pushed past
+                its limit*<br><br>
+                LEVEL: Sets the overall output volume<br><br>
+                CLAMP: Controls the threshold of a built in gate; starting at a fully open path, to an aggressive
+                clamp causing your signal to split as it travels through.<br><br>
+                *This control can react differently depending on the input signal, and will shut off if pushed past
+                its limit*<br><br>
+                MID CURVE: Changes the shape of the mid frequency EQ curve; allowing you to select a
+                specific frequency to push depending on your current scenario and needs
+                *This control is linked to the “PUSH” knob (see below)*<br><br>
+                ● Upper Mids<br><br>
+                ● Standard Curve<br><br>
+                ● Lower Mids<br><br>
+                PUSH: Changes the position of the peak of the mid frequency curve allowing you to blend
+                between the original and the newly selected curve.
+                *This control is linked to the “MID CURVE” switch (see above)*<br><br>
+                FREQ: A wide set tone control: Sweeping from trashy and trebly when fully clockwise to tight
+                and bass heavy when fully counter-clockwise.
+                *This control is linked to the “TONE BYPASS” switch (see below)*<br><br>
+
+                TONE BYPASS: When switched “ON”: the “FREQ” knob will react as intended. When switched
+                “OFF”: the control is removed from the signal path, slightly boosting overall volume and making
+                certain frequencies more prominent.
+                *This control is linked to the “FREQ” knob (see above)*<br><br>
+
+                NOISE: Sets the amount of gain being pushed from the circuit. From a touch of drive when fully
+                counter-clockwise, to absolute destruction when fully engaged.</p1>
+
+            </div>
+            
+        </div>
+
+        <div class="kozel-info-section">
+            
+            <div class="kozel-info-header" onclick="showInfoSection('specs-dropdown', 'specs-plus', 'specs-minus')">
+
+                <div class="kozel-info-title">
+
+                    <svg class="info-svg" xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-crosshair" viewBox="0 0 16 16">
+  <path d="M8.5.5a.5.5 0 0 0-1 0v.518A7 7 0 0 0 1.018 7.5H.5a.5.5 0 0 0 0 1h.518A7 7 0 0 0 7.5 14.982v.518a.5.5 0 0 0 1 0v-.518A7 7 0 0 0 14.982 8.5h.518a.5.5 0 0 0 0-1h-.518A7 7 0 0 0 8.5 1.018zm-6.48 7A6 6 0 0 1 7.5 2.02v.48a.5.5 0 0 0 1 0v-.48a6 6 0 0 1 5.48 5.48h-.48a.5.5 0 0 0 0 1h.48a6 6 0 0 1-5.48 5.48v-.48a.5.5 0 0 0-1 0v.48A6 6 0 0 1 2.02 8.5h.48a.5.5 0 0 0 0-1zM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+</svg>
+
+                    <h2 class="kozel-info-h2">SPECIFICATIONS</h2>
+
+                </div>
+
+                <svg class="info-svg" id="specs-plus" xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                </svg>
+                <svg class="info-svg" id="specs-minus" xmlns="http://www.w3.org/2000/svg"  fill="white" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
+                </svg>
+            </div>
+
+            <div class="kozel-info-dropdown" id="specs-dropdown">
+
+                <p1 class="kozel-info-dropdown-text">Current draw: 100mA <br><br>
+Enclosure Dimensions:<br><br>
+● Length: 120mm<br><br>
+● Width: 94mm<br><br>
+● Height: 42mm</p1>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+</div>
+
+<div id="services">
+
+    <!-- SERVICE SETUP -->
+
+    <div id="service-setup" class="card-item" onmouseenter="tileEnter('service-setup-title','service-setup-text','setup-img')" onmouseleave="tileLeave('service-setup-title','service-setup-text','setup-img')" >
+
+        <div id="service-setup-title" class="card-title">
+            <h2>SERVICE & <br>SETUP</h2> 
+        </div>
+
+        <div id="service-setup-text" class="card-text">
+            <p1>Does your instrument feel or look like it could do with some love? A service could be due!<br>
+            </p1>
+            <button class="service-button" onclick="openModal('setup-modal')">[ Learn More ]</button>
+        </div>
+
+        <img class="card-img" id="setup-img" alt="setup photo" src="setup.webp">
+        
+    </div>
+
+    <div id="setup-modal" class="modal">
+  
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('setup-modal')">&times;</span>
+            <h1 class="modal-h">SERVICE &nbsp; & &nbsp; SETUP</h1><br>
+            <p1>This
+includes:<br><br>
+● A deep clean of the fretboard, body and hardware<br><br>
+● A restring with your desired set<br><br>
+● Truss rod adjustment to the ideal relief<br><br>
+● Action adjustment to your desired height<br><br>
+● Intonation adjustment for tuning stability up the neck<br><br>
+● Electronic clean and check over<br><br><br></p1>
+
+<h1 style="color: var(--action);">Prices £50+</h1>
+
+        </div>
+
+    </div>
+
+ <!-- ELECTRONIC REPAIRS -->
+
+    <div id="electronic-repairs" class="card-item" onmouseenter="tileEnter('electronic-repairs-title','electronic-repairs-text','electronic-img')" onmouseleave="tileLeave('electronic-repairs-title','electronic-repairs-text','electronic-img')" >
+
+         <div id="electronic-repairs-title" class="card-title">
+            <h2>ELECTRONIC<br>REPAIRS</h2>
+        </div>
+        
+
+        <div id="electronic-repairs-text" class="card-text">
+            <p1>Hearing a weird crackle or hum? Intermittent or lack of signal? Or maybe you want a different sound? Electronics are your solution!<br>
+            </p1>
+            <button class="service-button" onclick="openModal('electronic-modal')">[ Learn More ]</button>
+        </div>
+
+        <img class="card-img" id="electronic-img" alt="electronic repair photo" src="electronics.webp">
+
+    </div>
+
+    <div id="electronic-modal" class="modal">
+  
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('electronic-modal')">&times;</span>
+
+            <h1 class="modal-h">ELECTRONIC &nbsp; REPAIRS</h1><br>
+            <p1>I can replace the following:<br><br>
+● Output jacks<br><br>
+● Volume or Tone Potentiometers<br><br>
+● Pickup and Various Circuit Switches<br><br>
+● Pickups<br><br>
+● Preamps<br><br>
+● Full Wiring Harness<br><br><br></p1>
+
+<h1 style="color: var(--action);">Prices £30+</h1>
+
+        </div>
+
+    </div>
+
+    <div id="hardware-repairs" class="card-item" onmouseenter="tileEnter('hardware-repairs-title','hardware-repairs-text','hardware-img')" onmouseleave="tileLeave('hardware-repairs-title','hardware-repairs-text','hardware-img')" >
+
+        <div id="hardware-repairs-title" class="card-title">
+            <h2>HARDWARE<br>REPAIRS</h2>
+        </div>
+
+
+        <div id="hardware-repairs-text" class="card-text">
+            <p1>Something snapped? Turning? Or not turning enough? Might be time to look at replacing some parts!<br>
+            </p1>
+            <button class="service-button" onclick="openModal('hardware-modal')">[ Learn More ]</button>
+        </div>
+
+         <img class="card-img" id="hardware-img" alt="hardware photo" src="hardware.webp">
+
+       
+    </div>
+
+    <div id="hardware-modal" class="modal">
+  
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('hardware-modal')">&times;</span>
+
+           <h1 class="modal-h">HARDWARE &nbsp; REPAIRS</h1><br>
+            <p1>I can help with:<br><br>
+● A replacement nut with your desired material<br><br>
+● Swapping out broken tuning pegs<br><br>
+● A replacement saddle with your desired material<br><br>
+● Stripped or threaded strap buttons<br><br>
+● Replacing bridge parts<br><br>
+
+● Upgrading current hardware<br><br><br>
+</p1>
+<h1 style="color: var(--action);">Prices £20+</h1>
+
+        </div>
+
+    </div>
+
+    <div id="fretwork" class="card-item" onmouseenter="tileEnter('fretwork-title','fretwork-text','fretwork-img')" onmouseleave="tileLeave('fretwork-title','fretwork-text','fretwork-img')" >
+
+        <div id="fretwork-title" class="card-title">
+            <h2>FRETWORK</h2>
+        </div>
+
+
+        <div id="fretwork-text" class="card-text">
+            <p1>We all love a low action, but dealing with divots, buzz and choking isn’t worth it! If you’re losing your note, your frets might need some work!<br>
+            </p1>
+            <button class="service-button" onclick="openModal('fretwork-modal')">[ Learn More ]</button>
+        </div>
+
+        <img class="card-img" id="fretwork-img" alt="fretwork photo" src="fretwork.webp">
+        
+    </div>
+
+     <div id="fretwork-modal" class="modal">
+  
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('fretwork-modal')">&times;</span>
+
+            <h1 class="modal-h">FRETWORK</h1><br>
+            <p1>Your frets might need the following:<br><br>
+● Levelling<br><br>
+● Recrowning<br><br>
+● End Dressing<br><br>
+● Polishing<br><br><br></p1>
+
+<h1 style="color: var(--action);">Prices £70+</h1>
+
+        </div>
+
+    </div>
+
+    <div id="modifications" class="card-item" onmouseenter="tileEnter('modifications-title','modifications-text','modifications-img')" onmouseleave="tileLeave('modifications-title','modifications-text','modifications-img')" >
+
+        <div id="modifications-title" class="card-title">
+            <h2>MODIFICATIONS</h2>
+        </div>
+
+
+        <div id="modifications-text" class="card-text">
+            <p1>Sometimes, stock just isn’t enough. If you want more versatility, sustain, or simply more noise at your fingertips, mods are the way forward!<br>
+            </p1>
+            <button class="service-button" onclick="openModal('modifications-modal')">[ Learn More ]</button>
+        </div>
+
+        <img class="card-img" id="modifications-img" alt="modifications photo" src="modifications.webp">
+        
+    </div>
+
+    <div id="modifications-modal" class="modal">
+  
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modifications-modal')">&times;</span>
+
+             <h1>MODIFICATIONS</h1><br>
+            <p1>Here’s a few examples:<br><br>
+● Coil-Split<br><br>
+● Out-of-Phase<br><br>
+● Rhythm Circuit<br><br>
+● Killswitch<br><br>
+● Straight to output jack<br><br>
+● Vintage Wiring<br><br><br></p1>
+
+<h1 style="color: var(--action);">Prices £30+</h1>
+
+        </div>
+
+    </div>
+
+    <div id="more" class="card-item" onmouseenter="tileEnter('more-title','more-text','more-img')" onmouseleave="tileLeave('more-title','more-text','more-img')">
+
+        <div id="more-title" class="card-title">
+            <h2>M O R E</h2>
+        </div>
+
+
+        <div id="more-text" class="card-text">
+            <p1>Something else?<br>
+            </p1>
+            <a href="#contact"><button class="service-button" >[ Get In Touch ]</button></a>
+        </div>
+
+        <img class="card-img" id="more-img" alt="more services photo" src="more.webp">
+        
+    </div>
+
+
+</div>
+
+
+<!-- REVIEWS SECTION -->
+
+<div id="reviews">
+
+    <div id="reviews-container-desktop">
+
+        <div class="review">
+            
+            
+            <p1>"I have taken multiple guitars for a variety of work to Wyatt and I can’t recommend the service any higher! With such a great depth of knowledge and experience, work is carried out to an amazing standard! Wyatt is incredibly friendly and always willing to offer support and help!"<br><br></p1>
+
+            <h1>- Kali Lloyd </h1>
+
+            <img class="five-stars" alt="five stars" src="5stars-green.webp">
+            
+        </div>
+
+        <div class="review">
+
+            
+            
+            <p1>"I've taken multiple guitars to Wyatt 4 or 5 times now for guitar setups and can honestly say that he does an excellent job. For a fair price, Wyatt will give you the perfect setup for your guitar and explains clearly what he has done to get it that way..."<br><br></p1>
+
+            <h1>- Luke Evans  </h1>
+
+            <img class="five-stars" alt="five stars" src="5stars-green.webp">
+            
+        </div>
+
+        <div class="review">
+
+            
+
+             
+             <p1>"Wyatt is an absolute lifesaver for any guitarist! I’ve been taking my guitars to him for several years now and he is always quick to recognise any issues I’m having, explains everything clearly, and gives a fair quote every time..."<br><br></p1>
+
+            <h1>- Tyler McIvor </h1>
+
+            <img class="five-stars" alt="five stars" src="5stars-green.webp">
+            
+
+        </div>
+
+       
+        <div class="review">
+
+             
+
+             <p1>"Guitar wizard! Wyatt has set up all of my basses and they play like butter. He's even brought back to life an old bass I had rotting away in an attic for 15 years. Highly recommended."<br><br></p1>
+
+            <h1>- Martin Dodd </h1>
+
+            <img class="five-stars" alt="five stars" src="5stars-green.webp">
+            
+
+    
+        </div>
+
+        <div class="review">
+
+            
+            
+            <p1>"Best Guitar tech I know. Connor is very skilled and reliable. He's been servicing, customising, and upgrading my guitars for years. Can't recommend him enough."<br><br></p1>
+
+            <h1>- Ash Purchese  </h1>
+
+            <img class="five-stars" alt="five stars" src="5stars-green.webp">
+            
+        </div>
+
+        
+
+        <div class="review">
+            
+           
+
+            <p1>"Thanks so much for great set up and spring clean on my 335 - playing better than ever. Will definitely use you again 5* service"<br><br></p1>
+
+            <h1>- Richard </h1>
+
+            <img class="five-stars" alt="five stars" src="5stars-green.webp">
+           
+        </div>
+  
+    </div>
+
+    <div id="google-review-container-desktop">
+        <a href="https://www.google.com/search?sca_esv=d453f7813e42fa49&sxsrf=AE3TifNU_kib5SK7Pj8FpTCVNy_Wx4G-LQ:1755474411502&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E2O4GN5r2Zilj6Y7HI6cwKf4KRTCtshe12gGpc-6X1KvuqnzlNaUcq-cHj8kxOfzBv_UpxNoYXjj3XJ55KZVEXjv_Jx6&q=Wyatt+Audio+UK+Reviews&sa=X&ved=2ahUKEwjd1tblg5OPAxUNUEEAHe4WK3QQ0bkNegQILRAD&biw=1536&bih=695&dpr=1.25" target="_blank">
+        <div id="leave-a-review">
+            <p1 id="leave-a-review-text">[ Click to Leave a Google Review &nbsp;</p1><img alt="google logo" src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg"><p1> &nbsp;]</p1>
+        </div>
+        </a>
+
+    </div>
+
+</div>
+
+<!-- REVIEWS SECTION MOBILE -->
+
+<div id="reviews">
+
+    <div id="reviews-container">
+
+        <div class="review">
+            
+            
+            <p1>"I have taken multiple guitars for a variety of work to Wyatt and I can’t recommend the service any higher! With such a great depth of knowledge and experience, work is carried out to an amazing standard! Wyatt is incredibly friendly and always willing to offer support and help!"<br><br></p1>
+
+            <h1>- Kali Lloyd </h1>
+
+            <img class="five-stars" alt="five stars" src="5stars-green.webp">
+           
+        </div>
+
+        <div class="review">
+
+            
+            
+            <p1>"I've taken multiple guitars to Wyatt 4 or 5 times now for guitar setups and can honestly say that he does an excellent job. For a fair price, Wyatt will give you the perfect setup for your guitar and explains clearly what he has done to get it that way..."<br><br></p1>
+
+            <h1>- Luke Evans  </h1>
+
+            <img class="five-stars" alt="five stars" src="5stars-green.webp">
+            
+        </div>
+
+        <div class="review">
+
+            
+
+             
+             <p1>"Wyatt is an absolute lifesaver for any guitarist! I’ve been taking my guitars to him for several years now and he is always quick to recognise any issues I’m having, explains everything clearly, and gives a fair quote every time..."<br><br></p1>
+
+            <h1>- Tyler McIvor </h1>
+
+            <img class="five-stars" alt="five stars" src="5stars-green.webp">
+            
+
+        </div>
+
+        
+        <div class="review">
+
+             
+
+             <p1>"Guitar wizard! Wyatt has set up all of my basses and they play like butter. He's even brought back to life an old bass I had rotting away in an attic for 15 years. Highly recommended."<br><br></p1>
+
+            <h1>- Martin Dodd </h1>
+
+            <img class="five-stars" alt="five stars" src="5stars-green.webp">
+            
+
+    
+        </div>
+
+        <div class="review">
+
+            
+            
+            <p1>"Best Guitar tech I know. Connor is very skilled and reliable. He's been servicing, customising, and upgrading my guitars for years. Can't recommend him enough."<br><br></p1>
+
+            <h1>- Ash Purchese  </h1>
+
+            <img class="five-stars" alt="five stars" src="5stars-green.webp">
+           
+        </div>
+
+        
+
+        <div class="review">
+            
+           
+
+            <p1>"Thanks so much for great set up and spring clean on my 335 - playing better than ever. Will definitely use you again 5* service"<br><br></p1>
+
+            <h1>- Richard </h1>
+
+            <img class="five-stars" alt="five stars" src="5stars-green.webp">
+            
+        </div>
+    
+
+    </div>
+
+    <div id="google-review-container">
+        <a href="https://www.google.com/search?sca_esv=d453f7813e42fa49&sxsrf=AE3TifNU_kib5SK7Pj8FpTCVNy_Wx4G-LQ:1755474411502&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E2O4GN5r2Zilj6Y7HI6cwKf4KRTCtshe12gGpc-6X1KvuqnzlNaUcq-cHj8kxOfzBv_UpxNoYXjj3XJ55KZVEXjv_Jx6&q=Wyatt+Audio+UK+Reviews&sa=X&ved=2ahUKEwjd1tblg5OPAxUNUEEAHe4WK3QQ0bkNegQILRAD&biw=1536&bih=695&dpr=1.25" target="_blank">
+        <div id="leave-a-review">
+            <p1 id="leave-a-review-text">Leave a review &nbsp;</p1><img alt="google logo" src="https://fonts.gstatic.com/s/i/productlogos/googleg/v6/24px.svg">
+        </div>
+        </a>
+
+    </div>
+
+
+</div>
+
+<!-- PEDAL CONTACT SECTION -->
+
+<span id="contact"></span>
+
+<div class="mobile-pedal-section">
+    <!-- display showing info -->
+
+    <div id="mobile-pedal-display-container">
+
+        <div id="mobile-pedal-display-containerheader"></div>
+
+        <!-- <div id="close-pedal-display" onclick="closePedalDisplay()">☒</div> -->
+
+        <div class="display-mobile">
+        <div id="phone-display-mobile">
+            <a href="tel: +44 (0) 7379 357 645" aria-label="Phonecall Wyatt Audio UK"><p3>07379357645</p3></a>
+        </div>
+        </div>
+
+        <div class="display-mobile">
+            <div id="email-display-mobile">
+                <a href="mailto:connorwyatt98@gmail.com" aria-label="Send an email to Wyatt Audio UK"><p3>connorwyatt98<br>@gmail.com</p3></a>
+            </div>
+        </div>
+
+        <div class="display-mobile">
+            <div id="insta-display-mobile">
+                 <a href="https://www.instagram.com/wyattaudiouk/" target="_blank" aria-label="Visit Wyatt Audio UK on Instagram"><p3>@wyattaudiouk</p3></a>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<div class="pedal-section" id="pedal-section">
+
+    <div class="pedal-container" id="pedal-container">
+
+        <div id="pedal-containerheader"></div>
+
+        <img src="muff-scratched.webp" alt="effects pedal graphic" id="pedal-canvas">
+    
+
+        <input type="range" class="input-knob" aria-label="phone-number-input-knob" data-diameter="120" min="0" max="11" step="1" value="0" data-src="knob2.webp" id="knob1"  oninput="pedalOperation()"/>
+
+        <input type="range" class="input-knob" aria-label="email-address-input-knob" data-diameter="120" min="0" max="23" step="1" value="0" data-src="knob2.webp" id="knob2" oninput="pedalOperation()"/>
+
+        <input type="range" class="input-knob" aria-label="instagram-handle-input-knob" data-diameter="120" min="0" max="13" step="1" value="0" data-src="knob2.webp" id="knob3" oninput="pedalOperation()"/>    
+
+
+        <button id="footswitch" aria-label="Turn on pedal" onclick="lightToggle()"></button>
+
+        <div id="light"></div>
+
+       <div class="tooltip">
+            <img class="question-mark" alt="help symbol" src="question-mark.webp">
+            <span class="tooltiptext"><p1>Click the footswitch to turn on pedal and display. <br>
+            Turn up the knobs to reveal information.</p1></span>
+    </div>
+
+    </div>
+
+
+    <div id="pedal-display-container">
+
+        <div id="pedal-display-containerheader"></div>
+
+        <div class="display">
+        
+            <p3 id="phone-display"></p3>
+        
+        </div>
+
+        <div class="display">
+            <p3 id="email-display"></p3>
+        </div>
+
+        <div class="display">
+            <p3 id="insta-display"></p3>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <p1 id="footer">Website built by <a href="https://velkndstudio.com/" aria-label="Visit Velknd Studio web designers website"><span id=highlight>Velknd.Studio</span></a></p1>
+
+</footer>
+
+</body>
+</html>
+
+
+<!-- website by Sam (velkndstudio.com) -->
